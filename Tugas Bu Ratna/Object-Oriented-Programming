@@ -1,0 +1,40 @@
+
+
+print()
+class vehicle():
+    def __init__(self):
+        print()
+        print('A type of vehicle')
+   
+class car(vehicle): 
+    def __init__(self,brand,design):
+        super().__init__()
+        self.brand = str.capitalize(brand)
+        self.design = str.capitalize(design)
+        print(f'{self.brand} {self.design} is a four-wheel vehicle.')
+        
+class bus(vehicle):
+    def __init__(self,brand,design):
+        super().__init__()
+        self.brand = str.capitalize(brand)
+        self.design = str.capitalize(design)
+        print(f'{self.brand} {self.design} is a four-wheel vehicle or more.')
+
+class bicycle(vehicle):
+    def __init__(self,brand,design):
+        super().__init__()
+        self.brand = str.capitalize(brand)
+        self.design = str.capitalize(design)
+        print(f'{self.brand} {self.design} is a two-wheeled vehicle.')
+        
+class motorcycle(vehicle):
+    def __init__(self,brand,design):
+        super().__init__()
+        self.brand = str.capitalize(brand)
+        self.design = str.capitalize(design)
+        print(f'{self.brand} {self.design} is a two-wheeled vehicle.')
+            
+x1 = car('Mercedes Benz and','Renault')
+x2 = bus('Morodadi Prima and','Rosalia Indah')
+x3 = bicycle('Specialized and','Cannondale')
+x4 = motorcycle('Ducati and','Kawasaki Ninja')
